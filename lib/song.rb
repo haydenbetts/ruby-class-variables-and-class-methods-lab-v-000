@@ -10,8 +10,8 @@ class Song
     @@genre_count = {}
     # {"rap" => 5, "rock" => 1, "country" => 3}
     def initialize(name, artist, genre)
-      @name = name
-      @artist = artist
-      @genre = genre
+      @name, @artist, @genre = name, artist, genre
+
+
     end
 end
