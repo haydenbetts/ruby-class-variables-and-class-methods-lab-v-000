@@ -14,6 +14,19 @@ class Song
       @@count += 1
       @@artists << artist
       @@genres << genre
+
+      if @@artist_count[artist]
+        @@artist_count[artist] += 1
+      else
+        @@artist_count[artist] = 1
+      end
+
+      if @@genre_count[genre]
+        @@genre_count[genre] += 1
+      else
+        @@genre_count[genre] = 1
+      end
+      
     end
 
     def count
