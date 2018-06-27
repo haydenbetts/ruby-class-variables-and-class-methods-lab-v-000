@@ -29,6 +29,8 @@ class Song
 
     end
 
+    def self.add_attributes_to_count_hash()
+
     def self.count
       @@count
     end
