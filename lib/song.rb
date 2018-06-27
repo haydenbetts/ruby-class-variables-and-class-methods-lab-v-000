@@ -2,7 +2,7 @@ class Song
 
     attr_accessor :name, :artist, :genre
 
-    @@count = []
+    @@count = 0
     @@artists = []
     @@artist_count = {}
       # => {"Beyonce" => 17, "Jay-Z" => 40}
