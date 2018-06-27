@@ -16,6 +16,7 @@ class Song
       @@artists << artist
       @@genres << genre
 
+      # would be better style to separate this into its own method
       if @@artist_count[artist]
         @@artist_count[artist] += 1
       else
