@@ -26,18 +26,18 @@ class Song
       else
         @@genre_count[genre] = 1
       end
-      
+
     end
 
-    def count
+    def self.count
       @@count
     end
 
-    def artists
+    def self.artists
       @@artists
     end
 
-    def genres
+    def self.genres
       @@genres
     end
 
