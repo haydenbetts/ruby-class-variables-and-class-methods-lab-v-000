@@ -12,8 +12,12 @@ class Song
     def initialize(name, artist, genre)
       @name, @artist, @genre = name, artist, genre
       @@count += 1
-      @@artists << artist if !@@artists.include?(artist)
-      @@artist_count[artist] += 1
+
+      if !@@artists.include?(artist)
+        @@artists << artist
+        @@artist_count[artist] = 1
+      else
+        @@artist_count[artist] += 1
 
     end
 end
